@@ -1,5 +1,6 @@
+
 /*
-  Hydrogen-invert.css
+  Hydrogen.css + dark mode plugin (Hydrogen-invert.css)
 */
 /*****************************************************************
 1. INITIAL SETTINGS
@@ -1710,7 +1711,7 @@ div#announce-block {
   padding: 0px 20px;
   margin: 5px 0px 10px 0px;
   border: 1px solid #00aa00;
-}	
+}
 
 #announce {
   border: none;
@@ -1775,28 +1776,118 @@ div#announce-block {
 }
 
 /****  Marens - BunsenLabs Forums Dark Mode for Hydrogen style  ****/
-/* https://forums.bunsenlabs.org/viewtopic.php?pid=132773#p132773 */
 
-      html body {
-      filter: invert(1) !important;
+    /* Hydrogen-invert.css */
+
+    html body {
+      filter: invert(1) hue-rotate(195deg);
     }
-
 
     img, .usercontacts, .crumbs,
     #punindex td.tcr,
     .pun #vf td.tcr,
     .pun .blocktable .tclcon,
+    tr.rowodd td.tc2 a,
+    tr.roweven td.tc2 a,
+    p.actions span a,
+    li.postreport span a,
+    li.postedit span a,
+    li.postquote span a,
+    .pagepost p.postlink.conr a,
+    p.subscribelink.clearb a,
+    li span a,
+    form#edit p.buttons a,
+    .pagepost p.pagelink.conl a,
+    .pagepost p.pagelink a,
+    .inbox dl#onlinelist.clearb dd a,
+    .inbox dl.conl dd span a,
+    .infldset p a,
+    .infldset p.actions a,
+    form#post p.buttons a,
+    #brdmain > *.linkst > *.inbox p.pagelink a,
+    #brdmain > *.linksb > *.inbox p.pagelink a,
+    #users1.blocktable > *.box > *.inbox table tbody tr td.tcl a,
+    #msg.block > *.box > *.inbox p a,
+    #profile.block2col > *.blockmenu > *.box > *.inbox ul li a,
+    #brdwelcome.inbox ul.conr li span a,
+    #feedlinks, #poweredby a,
 
     /* Forum Rules/Register Page */
     .pun .usercontent ol,
     *[style*="color:red;"],
-    *[style*="color:green;"] {
-      filter: invert(1) !important;
+    *[style*="color:green;"],
+
+    /* BBCode Page */
+    samp ins,
+    .inbox p samp a,
+    *[style*="color: #ff0000"],
+    *[style*="color: blue"] {
+      filter: invert(1) hue-rotate(165deg);
     }
 
-    .crumbs {
-      border-top: 1px solid #202020 !important;
-      border-bottom: 1px solid #202020 !important;
+    /* Page Number */
+    .pun .pagelink a, .pun .pagelink *,
+    .pagepost p.pagelink a {
+      border-color: transparent;
     }
 
-}
+    /* Path */
+    .inbox.crumbsplus ol.crumbs,
+    #punpost.pun > *.punwrap > *#brdmain > *.linkst > *.inbox ol.crumbs,
+    #punedit.pun > *.punwrap > *#brdmain > *.linkst > *.inbox ol.crumbs,
+    #punmisc.pun > *.punwrap > *#brdmain > *.linkst > *.inbox ol.crumbs {
+      border-top: 1px solid #202020;
+      border-bottom: 1px solid #202020;
+    }
+
+    /* More Pleasing to the Eyes */
+    #punindex #brdmain .blocktable h2,
+    #punsearch #vf h2,
+    .pun #vf td.tcl span.stickytext,
+    .pun #vf td.tcl a,
+    .pun .blocktable h3,
+    .inbox table thead tr {
+      opacity: 0.9;
+    }
+
+    /* User Box */
+    h2 span a:hover, h2 span a:active, h2 span a:focus,
+    .blockpost .postsignature > * a:link {
+      filter: invert(1) hue-rotate(165deg);
+    }
+
+    h2 span a:not(:hover, :focus, :active) {
+      opacity: 0.8;
+    }
+
+    /* Profile Page */
+    #profile.block2col > *.blockmenu > *.box > *.inbox ul li a,
+    #profile.block2col > *.blockmenu > *.box > *.inbox ul li.isactive a {
+      background: transparent;
+    }
+
+    #profile.block2col > *.blockmenu > *.box > *.inbox ul li.isactive a {
+      color: #adadad;
+    }
+
+
+    /* Keyboard Scroll Shortcuts Ctrl+PageUp/Down - Fix White Flash */
+    /* Login Page - Fix the Bottom Part */
+
+    html {
+      background: #05060a;
+    }
+
+    /* LATEST */
+
+    .icon.icon-new {
+      filter: invert(1) hue-rotate(165deg);
+    }
+
+    .pun .postmsg .postimg img {
+      opacity: 0.85;
+    }
+
+    .pun .quotebox {
+      background: white;  /* Inverted White is Black */
+    }
