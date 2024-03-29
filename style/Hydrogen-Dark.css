@@ -56,6 +56,7 @@ body {
 
 .pun table, .pun td, .pun th, .pun input, .pun select, .pun optgroup, .pun legend {
     font-size: 1em;
+    font-family: inherit;
 }
 
 /*
@@ -988,7 +989,7 @@ MAIN POSTS
 }
 
 .pun .codebox {
-    border-style: solid;
+    border-style: dashed;
     border-width: 1px;
   /* border-color: #b9c5ce; */
     margin: 0.75em 1em;
@@ -1030,7 +1031,7 @@ MAIN POSTS
 }
 
 .pun .codebox pre code {
-    padding: 0.5em;
+    padding: 0.75em;
     white-space: pre;
 }
 
@@ -1235,6 +1236,7 @@ MAIN FORMS
 
 .pun input[type=text], .pun select, .pun textarea {
     font-size: 1em;
+    font-family: inherit;
 }
 
 .pun textarea, input[type="text"] {
