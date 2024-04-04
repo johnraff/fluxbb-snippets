@@ -301,7 +301,7 @@ body {
     border-width: 1px;
     display: block;
     min-width: 60px;
-    padding: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     white-space: nowrap;
@@ -1802,7 +1802,7 @@ div#announce-block {
     .pun #quickpost .txtarea textarea { width:100%;border-radius:0px;}
     #ezbbctoolbar , .bblinks{ display:none ; }
     .pun .linkst .crumbs { font-size: inherit; }
-    #brdmenu a:link { padding:0; min-width:0; }
+    /*#brdmenu a:link { padding:0; min-width:0; }*/
     #brdmenu ul li { padding-right:5px;}
     #brdmenu ul li:last-child { border-right: none; }
     #brdwelcome > .conl { display:none; }
